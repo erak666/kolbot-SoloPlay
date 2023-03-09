@@ -23,7 +23,7 @@ const Developer = {
 	addLadderRW: !me.profile.toLowerCase().contains("nl"),
 	// @desc - hide casting animations for better stability (reduce d2bs crashes)
 	forcePacketCasting: {
-		enabled: true,
+		enabled: false,
 		// @desc - allow specific profiles to show casting animations without disabling it for every profile running (helpful when debugging)
 		excludeProfiles: [""],
 	},
@@ -64,8 +64,8 @@ const Developer = {
 		grandCharm: false,
 		baseCheck: false,
 		junkCheck: false,
-		autoEquip: false,
-		crafting: false,
+		autoEquip: true,
+		crafting: true,
 		pathing: false,
 		skills: false,
 		showStack: {
