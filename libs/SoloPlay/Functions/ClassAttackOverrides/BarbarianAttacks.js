@@ -17,7 +17,7 @@ includeIfNotIncluded("core/Attacks/Barbarian.js");
 	ClassAttack.warCryTick = 0;
 
 	const howlCheck = function () {
-		let levelCheck = (me.getSkill(sdk.skills.Howl, sdk.skills.subindex.SoftPoints) + me.charlvl + 1);
+		let levelCheck = (me.getSkill(sdk.skills.Howl, sdk.skills.subindex.SoftPoints) + me.charlvl - 1);
 		return getUnits(sdk.unittype.Monster).filter(function (el) {
 			return (!!el && el.attackable && el.distance < 6 && el.scareable && GameData.monsterLevel(el.classid, me.area) < levelCheck && !el.isStunned
 				&& [sdk.states.BattleCry, sdk.states.AmplifyDamage, sdk.states.Decrepify, sdk.states.Terror, sdk.states.Taunt].every(state => !el.getState(state))
