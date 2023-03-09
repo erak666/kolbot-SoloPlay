@@ -20,7 +20,7 @@ const Developer = {
 	// @desc - show Total, InGame, and OOG (out of game) time in the D2bot# status window
 	displayClockInConsole: false,
 	// @desc - log currently equipped items to D2Bot# charviewer tab
-	logEquipped: false,
+	logEquipped: true,
 	// @desc - disable printing chicken info in D2Bot console
 	hideChickens: true,
 	// @desc - enable ladder runewords in single player mode ONLY WORKS IF RUNEWORDS.TXT IS INSTALLED AND D2BS PROFILE IS CONFIGURED
@@ -28,7 +28,7 @@ const Developer = {
 	addLadderRW: !me.profile.toLowerCase().contains("nl"),
 	// @desc - hide casting animations for better stability (reduce d2bs crashes)
 	forcePacketCasting: {
-		enabled: true,
+		enabled: false,
 		// @desc - allow specific profiles to show casting animations without disabling it for every profile running (helpful when debugging)
 		excludeProfiles: [""],
 	},
@@ -74,8 +74,8 @@ const Developer = {
 		grandCharm: false,
 		baseCheck: false,
 		junkCheck: false,
-		autoEquip: false,
-		crafting: false,
+		autoEquip: true,
+		crafting: true,
 		pathing: false,
 		skills: false,
 		showStack: {
