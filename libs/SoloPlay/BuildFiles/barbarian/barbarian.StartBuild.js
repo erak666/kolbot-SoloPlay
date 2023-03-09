@@ -18,9 +18,9 @@ let build = {
 	stats: [
 		["strength", 30], ["dexterity", 20], ["vitality", 75],
 		["strength", 48], ["dexterity", 30], ["vitality", 75],
-		["strength", 55], ["dexterity", 39], ["vitality", 75],
-		["strength", 60], ["dexterity", 40], ["vitality", 75],
-		["strength", 71], ["dexterity", 49], ["vitality", "all"],
+		["strength", 60], ["dexterity", 35], ["vitality", 75],
+		["strength", 60], ["dexterity", 35], ["vitality", 75],
+		["strength", 60], ["dexterity", 35], ["vitality", "all"],
 	],
 	skills: [
 		[sdk.skills.Bash, 1],               // charlevel 2
